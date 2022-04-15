@@ -21,6 +21,8 @@ a, a:visited, a:hover {
     color: hsl(228, 39%, 23%);
 }
 
+
+//Flexbox
 .flex {
     display: flex;
 
@@ -37,7 +39,6 @@ a, a:visited, a:hover {
     }
 }
 
-
 button, .button {
     padding: 0.7rem 1.5rem;
     border-radius: 50px;
@@ -49,11 +50,15 @@ button, .button {
 }
 
 
-//Visibility
-.hide_for_desktop {
-    //hide for desktop viewport widths
-}
-
-.hide_for_mobile {
-    //hide for tablet and mobile
-}
+//Visibility 
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+  
+  .hide-for-desktop {
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
