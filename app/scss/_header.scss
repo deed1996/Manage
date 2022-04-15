@@ -4,12 +4,19 @@
         padding: 1.5rem;
     }
 
+    &_logo {
+        img {
+            width:9.375rem;
+            height: 0.3rem;
+        }
+    }
+
     &_menu {
         > span {
             display: block;
             width: 1.6rem;
             height: 3px;
-            background-color: hsl(228, 39%, 23%);
+            background-color: $darkBlue;
 
 
             &:not(:last-child){
@@ -23,7 +30,14 @@
         
         a {
             font-size: 0.875rem; //14px
-            margin-right: 2rem;
+
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 }

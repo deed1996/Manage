@@ -18,7 +18,7 @@ body {
 
 a, a:visited, a:hover {
     text-decoration: none;
-    color: hsl(228, 39%, 23%);
+    color: $darkBlue;
 }
 
 
@@ -42,11 +42,16 @@ a, a:visited, a:hover {
 button, .button {
     padding: 0.7rem 1.5rem;
     border-radius: 50px;
-    background-color: hsl(12, 88%, 59%);
+    background-color: $brightRed;
     border: 0;
     color: white;
     font-weight: 400;
-    box-shadow: 0px 4px 12px 0px hsl(12, 88%, 59%);
+    box-shadow: 0px 4px 12px 0px $brightRed;
+
+    &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
 }
 
 
