@@ -4,13 +4,6 @@
         padding: 1.5rem;
     }
 
-    &_logo {
-        img {
-            width:9.375rem;
-            height: 0.3rem;
-        }
-    }
-
     &_menu {
         > span {
             display: block;
@@ -21,6 +14,22 @@
 
             &:not(:last-child){
                 margin-bottom: 0.2rem;
+            }
+        }
+
+        &.open {
+
+            > span:first-child {
+                transform: rotate(45deg);
+                transform-origin: center left;
+            }
+    
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+    
+            >span:last-child {
+                transform: rotate(-45deg);
             }
         }
     }

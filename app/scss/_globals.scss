@@ -3,7 +3,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -16,7 +18,9 @@ body {
     font-weight: 300;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
     text-decoration: none;
     color: $darkBlue;
 }
@@ -30,16 +34,23 @@ a, a:visited, a:hover {
         justify-content: space-between;
     }
 
-    &-jc-c{
+    &-jc-c {
         justify-content: center;
     }
 
-    &-ai-c{
-       align-items: center;
+    &-ai-c {
+        align-items: center;
+    }
+
+    &-ai-fs {
+        @include breakpoint-down(medium) {
+            align-items: start;
+        }
     }
 }
 
-button, .button {
+button,
+.button {
     padding: 0.7rem 1.5rem;
     border-radius: 50px;
     background-color: $brightRed;
@@ -58,12 +69,12 @@ button, .button {
 //Visibility 
 .hide-for-mobile {
     @include breakpoint-down(medium) {
-      display: none;
+        display: none;
     }
-  }
-  
-  .hide-for-desktop {
+}
+
+.hide-for-desktop {
     @include breakpoint-up(large) {
-      display: none;
+        display: none;
     }
-  }
+}
