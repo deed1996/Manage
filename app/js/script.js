@@ -1,11 +1,12 @@
 const btnhamburger = document.querySelector('#btnhamburger');
+const header = document.querySelector('.header');
 
 btnhamburger.addEventListener('click', function() {
     console.log('click hamburger');
 
-    if(btnhamburger.classList.contains('open')) {
-        btnhamburger.classList.remove('open');
+    if(header.classList.contains('open')) {
+        header.classList.remove('open');
     } else {
-        btnhamburger.classList.add('open');
+        header.classList.add('open');
     }
 });
