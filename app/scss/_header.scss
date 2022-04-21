@@ -1,9 +1,5 @@
 .header {
 
-    nav {
-        padding: 1.5rem;
-    }
-
     &.open {
 
         .header_menu {
@@ -19,15 +15,21 @@
                 transform: rotate(-45deg);
             }
         }
+    }
 
-        .overlay {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: linear-gradient(transparent, $darkGrayishBlue);
-        }
+    .overlay {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(transparent, $darkGrayishBlue);
+    }
+
+    nav {
+        padding: 1.5rem;
     }
 
     &_menu {
