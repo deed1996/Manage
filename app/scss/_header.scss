@@ -2,7 +2,7 @@
 
     &.open {
 
-        .header_menu {
+        .header_toggle {
             >span:first-child {
                 transform: rotate(45deg);
             }
@@ -19,20 +19,20 @@
 
     .overlay {
         opacity: 0;
-        visibility: hidden;
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(transparent, $darkGrayishBlue);
+        background-image: linear-gradient(transparent, $darkGray);
     }
 
     nav {
-        padding: 1.5rem;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
 
-    &_menu {
+    &_toggle { // mobile menu toggle
         >span {
             display: block;
             width: 1.6rem;
@@ -45,6 +45,24 @@
             &:not(:last-child) {
                 margin-bottom: 0.2rem;
             }
+        }
+    }
+
+    &_menu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        background: $white;
+        margin-top: 1.5srem;
+        padding: 1.625rem;
+        border-radius: 5px;
+
+        a {
+            display: block;
+            padding: 0.625rem;
+            color: $darkBlue;
+            text-align: center;
         }
     }
 
