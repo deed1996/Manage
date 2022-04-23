@@ -1,6 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    width: 100%;
 }
 
 *,
@@ -31,7 +32,9 @@ p {
 
 //Spacing
 .container {
+    padding-top: 2.25rem;
     padding-left: 1.5rem;
+    padding-bottom: 2.25rem;
     padding-right: 1.5rem;
 }
 

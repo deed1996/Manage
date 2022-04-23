@@ -1,4 +1,13 @@
 .hero {
+
+    overflow-x: hidden;
+
+    @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+        height: 40rem;
+    }
+
     &_image {
         position: relative;
         background-image: url(../../images/bg-tablet-pattern.svg);
@@ -8,7 +17,15 @@
         min-height: 23rem;
         z-index: -1;
         width: 100%;
-        transform: translate(50px, -140px);
+        transform: translate(3.125rem, -3.75rem);
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 2;
+
+            min-height: 100%;
+            transform: translate(3.125rem, -6.75rem);
+        }
 
 
         &::before {
@@ -20,21 +37,32 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: 80%;
-            transform: translate(-50px, 110px);
+            transform: translate(-3.15rem, 5.625rem);
+            top: 10%;
         }
     }
 
     &_text {
 
         text-align: center;
-        margin-top: -45px;
         
         h1 {
-            font-size: 30px;
+            font-size: 1.875rem;
         }
 
         button {
-            align-content: center;
+            margin-top: 0.5rem;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            text-align: left;
+
+            h1 {
+                font-size: 3rem;
+                margin-right: 4rem;
+            }
         }
     }
 }

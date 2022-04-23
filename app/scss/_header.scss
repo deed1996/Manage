@@ -1,5 +1,7 @@
 .header {
 
+    display: fixed;
+    
     &.open {
 
         .header_toggle {
@@ -28,8 +30,11 @@
     }
 
     nav {
-        padding-top: 1.0625rem;
-        padding-bottom: 1.0625rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: absolute;
+        justify-content: space-between;
+        width: 100%;
     }
 
     &_toggle { // mobile menu toggle
@@ -54,7 +59,7 @@
         left: 50%;
         transform: translateX(-50%);
         background: $white;
-        margin-top: 1.5srem;
+        margin-top: 5rem;
         padding: 1.625rem;
         border-radius: 5px;
 
