@@ -1,0 +1,40 @@
+.hero {
+    &_image {
+        position: relative;
+        background-image: url(../../images/bg-tablet-pattern.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        min-height: 23rem;
+        z-index: -1;
+        width: 100%;
+        transform: translate(50px, -140px);
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../../images/illustration-intro.svg);
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
+            transform: translate(-50px, 110px);
+        }
+    }
+
+    &_text {
+
+        text-align: center;
+        margin-top: -45px;
+        
+        h1 {
+            font-size: 30px;
+        }
+
+        button {
+            align-content: center;
+        }
+    }
+}

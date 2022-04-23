@@ -103,6 +103,10 @@ a:hover {
   color: #242d52;
 }
 
+p {
+  color: #9095a7;
+}
+
 .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -242,5 +246,45 @@ button:hover,
 .fade-out {
   -webkit-animation: fade-out 200ms ease-in-out forwards;
           animation: fade-out 200ms ease-in-out forwards;
+}
+
+.hero_image {
+  position: relative;
+  background-image: url(../../images/bg-tablet-pattern.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 23rem;
+  z-index: -1;
+  width: 100%;
+  -webkit-transform: translate(50px, -140px);
+          transform: translate(50px, -140px);
+}
+
+.hero_image::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/illustration-intro.svg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  -webkit-transform: translate(-50px, 110px);
+          transform: translate(-50px, 110px);
+}
+
+.hero_text {
+  text-align: center;
+  margin-top: -45px;
+}
+
+.hero_text h1 {
+  font-size: 30px;
+}
+
+.hero_text button {
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
