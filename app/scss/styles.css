@@ -113,6 +113,10 @@ a:hover {
   color: #242d52;
 }
 
+h1, h2, h3 {
+  color: #242d52;
+}
+
 p {
   color: #9095a7;
 }
@@ -122,6 +126,13 @@ p {
   padding-left: 2.5rem;
   padding-bottom: 1.5rem;
   padding-right: 2.5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .flex {
@@ -264,7 +275,7 @@ button:hover,
   overflow-x: hidden;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -273,6 +284,19 @@ button:hover,
         -ms-flex-align: center;
             align-items: center;
     height: 40rem;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 40em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 35rem;
     overflow: hidden;
   }
 }
@@ -320,11 +344,6 @@ button:hover,
 
 .hero_text {
   text-align: center;
-  margin-top: 2rem;
-}
-
-.hero_text h1 {
-  font-size: 1.875rem;
 }
 
 .hero_text button {
@@ -342,8 +361,10 @@ button:hover,
     text-align: left;
   }
   .hero_text h1 {
-    font-size: 3rem;
-    margin-right: 4rem;
+    font-size: 2.5rem;
+  }
+  .hero_text p {
+    margin-right: 5rem;
   }
 }
 
@@ -351,36 +372,53 @@ button:hover,
   text-align: center;
 }
 
+@media (min-width: 40em) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+}
+
 .main_heading h2 {
   font-size: 1.5rem;
 }
 
 @media (min-width: 40em) {
-  .main_heading div {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    text-align: left;
+  .main_heading {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
   .main_heading h2 {
-    font-size: 2.5rem;
-    margin-right: 8.4375rem;
+    font-size: 2rem;
+    margin-top: 0;
   }
   .main_heading p {
-    margin-right: 14rem;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .main_reasons {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
 }
 
 .main_reasons ul {
   list-style-type: none;
-  padding-left: 0;
+  margin-left: -2rem;
+  overflow: hidden;
 }
 
-.main_reasons ul p {
+.main_reasons p {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 3rem;
+  text-align: left;
 }
 
 .main_reasons span {
@@ -397,6 +435,12 @@ button:hover,
   margin-left: 1rem;
 }
 
+@media (min-width: 40em) {
+  .main_reasons span span {
+    background-color: white;
+  }
+}
+
 .main_reasons span li {
   padding: 0.5rem 1.5rem;
   background-color: #f25f3a;
@@ -409,5 +453,11 @@ button:hover,
 .main_reasons span h3 {
   font-size: 0.9rem;
   padding-left: 1.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.testimonials {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
