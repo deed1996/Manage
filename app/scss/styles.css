@@ -264,7 +264,7 @@ button:hover,
   overflow-x: hidden;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -272,7 +272,6 @@ button:hover,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 40rem;
     height: 40rem;
     overflow: hidden;
   }
@@ -291,7 +290,7 @@ button:hover,
           transform: translate(3.125rem, -3.75rem);
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .hero_image {
     -webkit-box-flex: 2;
         -ms-flex: 2;
@@ -321,6 +320,7 @@ button:hover,
 
 .hero_text {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .hero_text h1 {
@@ -331,7 +331,7 @@ button:hover,
   margin-top: 0.5rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .hero_text {
     -webkit-box-flex: 2;
         -ms-flex: 2;
@@ -345,5 +345,69 @@ button:hover,
     font-size: 3rem;
     margin-right: 4rem;
   }
+}
+
+.main {
+  text-align: center;
+}
+
+.main_heading h2 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 40em) {
+  .main_heading div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  .main_heading h2 {
+    font-size: 2.5rem;
+    margin-right: 8.4375rem;
+  }
+  .main_heading p {
+    margin-right: 14rem;
+  }
+}
+
+.main_reasons ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.main_reasons ul p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.main_reasons span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffefeb;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.main_reasons span li {
+  padding: 0.5rem 1.5rem;
+  background-color: #f25f3a;
+  border: 0;
+  color: white;
+  font-weight: 400;
+  border-radius: 50px;
+}
+
+.main_reasons span h3 {
+  font-size: 0.9rem;
+  padding-left: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

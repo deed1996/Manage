@@ -2,10 +2,9 @@
 
     overflow-x: hidden;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) { //Desktop and Tablet
         display: flex;
         align-items: center;
-        height: 40rem;
         height: 40rem;
         overflow: hidden;
     }
@@ -21,14 +20,13 @@
         width: 100%;
         transform: translate(3.125rem, -3.75rem);
 
-        @include breakpoint-up(large) {
+        @include breakpoint-up(medium) { //Desktop and Tablet
             flex: 2;
             order: 2;
 
             min-height: 100%;
             transform: translate(3.125rem, -6.75rem);
         }
-
 
         &::before {
             content: "";
@@ -47,7 +45,8 @@
     &_text {
 
         text-align: center;
-        
+        margin-top: 2rem;
+
         h1 {
             font-size: 1.875rem;
         }
@@ -56,7 +55,7 @@
             margin-top: 0.5rem;
         }
 
-        @include breakpoint-up(large) {
+        @include breakpoint-up(medium) { //Desktop and Tablet
             flex: 2;
             order: 1;
             text-align: left;
