@@ -21,8 +21,8 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- See all testimonials in a horizontal slider
-- Receive an error message when the newsletter sign up `form` is submitted if:
+- See all testimonials in a horizontal slider (in progress)
+- Receive an error message when the newsletter sign up `form` is submitted if: (in progress)
   - The `input` field is empty
   - The email address is not formatted correctly
 
@@ -39,9 +39,8 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom properties and CSS Grid
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - SCSS
 
@@ -51,5 +50,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Devarshi Desai]
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - Devarshi Desai
+- Frontend Mentor - @deed1996
