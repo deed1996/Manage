@@ -22,35 +22,45 @@ btnhamburger.addEventListener('click', function () {
 });
 
 
-const slider= tns({container:".testimonials_slider",
-  loop:!0,
-  items:1,
+const slider = tns({
+  container: ".testimonials_slider",
+  loop: !0,
+  items: 1,
   gutter: 20,
-  slideBy:"page",
-  nav:true,
+  slideBy: "page",
+  nav: true,
   navPosition: "bottom",
-  autoplay:true,
-  speed:800,
-  autoplayButtonOutput:!1,
-  mouseDrag:!0,
+  autoplay: true,
+  speed: 800,
+  autoplayButtonOutput: !1,
+  mouseDrag: !0,
   controls: false,
-  responsive:{
-    640:{
+  responsive: {
+    640: {
       items:
-      1
+        1
     },
-    768:{
-      items:2,
+    768: {
+      items: 2,
       nav: false,
-      speed:1000,
+      speed: 1000,
       gutter: 20
     },
-    1035:{
-      items:3,
+    1035: {
+      items: 3,
       nav: false,
-      speed:1000,
+      speed: 1000,
       autoplayHoverPause: true,
       gutter: 20
     }
   }
-  });
+});
+
+
+function validateForm() {
+  var x = document.forms["form"]["subscribe_form"].value;
+  if (x == "" || x == null) {
+    alert("Please enter a valid email.");
+    return false;
+  }
+}
