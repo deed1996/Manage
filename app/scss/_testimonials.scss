@@ -10,12 +10,17 @@
         padding: 2rem;
         height: 20rem;
 
-        img {
-            width: 20%;
-        }
-
         @include breakpoint-up(medium) {
             margin-bottom: 3rem;
+            height: 25rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 20rem;
+        }
+
+        img {
+            width: 20%;
         }
     }
 }

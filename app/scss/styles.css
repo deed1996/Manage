@@ -187,6 +187,13 @@ button_white,
 @media (min-width: 40em) {
   button_white,
   .button_white {
+    width: 30%;
+  }
+}
+
+@media (min-width: 64em) {
+  button_white,
+  .button_white {
     width: 20%;
   }
 }
@@ -508,14 +515,21 @@ button_white,
   height: 20rem;
 }
 
-.testimonials_card img {
-  width: 20%;
-}
-
 @media (min-width: 40em) {
   .testimonials_card {
     margin-bottom: 3rem;
+    height: 25rem;
   }
+}
+
+@media (min-width: 64em) {
+  .testimonials_card {
+    height: 20rem;
+  }
+}
+
+.testimonials_card img {
+  width: 20%;
 }
 
 .tns-nav > [aria-controls] {
@@ -557,25 +571,6 @@ button_white,
           flex-direction: column;
 }
 
-.simplify h2 {
-  color: white;
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-.simplify::before {
-  content: "";
-  position: absolute;
-  background-image: url(../../images/bg-simplify-section-mobile.svg);
-  height: 100%;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  -webkit-transform: translate(-5rem, 9.625rem);
-          transform: translate(-5rem, 9.625rem);
-}
-
 @media (min-width: 40em) {
   .simplify {
     height: 13rem;
@@ -588,6 +583,44 @@ button_white,
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.simplify::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/bg-simplify-section-mobile.svg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-transform: translate(-12rem, 2.625rem);
+          transform: translate(-12rem, 2.625rem);
+}
+
+@media (min-width: 40em) {
+  .simplify::before {
+    width: 50%;
+    -webkit-transform: translate(-1rem, 6.625rem);
+            transform: translate(-1rem, 6.625rem);
+  }
+}
+
+@media (min-width: 64em) {
+  .simplify::before {
+    width: 60%;
+    -webkit-transform: translate(-6rem, 10.625rem);
+            transform: translate(-6rem, 10.625rem);
+  }
+}
+
+.simplify h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 40em) {
   .simplify h2 {
     text-align: left;
     margin-right: 10rem;

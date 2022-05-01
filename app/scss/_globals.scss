@@ -86,6 +86,10 @@ button,
         color: $brightRed;
 
         @include breakpoint-up(medium) {
+            width: 30%;
+        }
+
+        @include breakpoint-up(large) {
             width: 20%;
         }
     }
