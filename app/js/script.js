@@ -37,7 +37,7 @@ const slider= tns({container:".testimonials_slider",
   responsive:{
     640:{items:1},
     768:{
-      items:2.5,
+      items:3,
       nav: false,
       speed:1000,
       autoplayHoverPause: true,

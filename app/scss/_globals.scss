@@ -42,13 +42,6 @@ p {
     padding-right: 2.5rem;
 }
 
-@include breakpoint-down(medium) {
-    .container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-}
-
 
 //Flexbox
 .flex {
@@ -91,6 +84,10 @@ button,
     &_white {
         background-color: $white;
         color: $brightRed;
+
+        @include breakpoint-up(medium) {
+            width: 20%;
+        }
     }
 }
 

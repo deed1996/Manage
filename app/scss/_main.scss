@@ -8,23 +8,40 @@
 
     &_heading {
 
-        h2 { //Mobile
+        h2 {
+            //Mobile
             font-size: 1.5rem;
-        }
 
-
-        @include breakpoint-up(medium) { //Desktop and Tablet
-
-            flex: 2;
-
-            h2 {
+            @include breakpoint-up(medium) {
                 font-size: 2rem;
                 margin-top: 0;
             }
+        }
 
-            p {
-                margin-right: 10rem;
+        &_bg {
+            content: "";
+            position: absolute;
+            background-image: url(../../images/bg-tablet-pattern.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            height: 100%;
+            z-index: -1;
+            width: 60%;
+            /* -webkit-transform: translate(-3.875rem, 9.25rem); */
+            transform: translate(15.125rem, -26.75rem);
+
+            @include breakpoint-up(medium) {
+                transform: translate(-18.875rem, -4.75rem)
             }
+
+            @include breakpoint-up(large) {
+                transform: translate(-33.875rem, 9.25rem);
+            }
+        }
+
+        @include breakpoint-up(medium) {
+            flex: 2;
         }
     }
 
