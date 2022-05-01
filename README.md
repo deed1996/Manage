@@ -1,6 +1,6 @@
 # Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). 
 
 ## Table of contents
 
@@ -39,14 +39,13 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties and CSS Grid
-- Flexbox
 - Mobile-first workflow
 - SCSS
+- Vanilla JavaScript
 
 ### Useful resources
 
-- [How to Make a Landing Page using HTML, SCSS, and JavaScript - Full Course](https://youtu.be/aoQ6S1a32j8) - This is an amazing tutorial which helped me understand how to build a landing page from scratch using SCSS. I'd recommend it to anyone still learning this concept!
+- [How to Make a Landing Page using HTML, SCSS, and JavaScript - Full Course](https://youtu.be/aoQ6S1a32j8) - This is an amazing tutorial which helped me understand how to build a landing page from scratch with SCSS. I'd recommend it to anyone still learning this concept!
 
 ## Author
 

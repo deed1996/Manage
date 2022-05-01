@@ -1,21 +1,40 @@
 .footer {
-
     background-color: $veryDarkBlue;
     color: $white;
     padding: 2.5rem;
     position: relative;
     text-align: center;
 
+    @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "logo col1 col2 form"
+            "socials col1 col2 copyright";
+        justify-items: stretch;
+        column-gap: 5rem;
+    }
+
     &_logo {
+
         img {
             margin-top: 2rem;
             margin-bottom: 2rem;
+        }
+
+        @include breakpoint-up(medium) {
+            grid-area: logo;
         }
     }
 
     &_socials {
         display: flex;
         justify-content: space-around;
+
+        @include breakpoint-up(medium) {
+            grid-area: socials;
+        }
     }
 
 
@@ -34,6 +53,19 @@
             padding-bottom: 1rem;
         }
 
+        &.col1 {
+            @include breakpoint-up(medium) {
+                grid-area: col1;
+            }
+        }
+
+        &.col2 {
+            @include breakpoint-up(medium) {
+                grid-area: col2;
+                align-self: flex-start;
+            }
+        }
+
     }
 
     &_form {
@@ -50,5 +82,18 @@
             box-shadow: none;
         }
 
+        @include breakpoint-up(medium) {
+            grid-area: form;
+            align-self: center;
+        }
+
+    }
+
+    &_copyright {
+        @include breakpoint-up(medium) {
+            grid-area: copyright;
+            justify-self: end;
+            align-self: center;
+        }
     }
 }
