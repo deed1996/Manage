@@ -5,24 +5,34 @@
         margin-bottom: 3rem;
     }
 
-
-    &_slider {
-        position: relative;
-        padding: 1rem 1rem;
-
-    }
-
     &_card {
-        position: relative;
         background-color: #FAFAFA;
+        padding: 2rem;
+        height: 20rem;
 
         img {
             width: 20%;
-            margin-top: -2rem;
+        }
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 3rem;
         }
     }
 }
 
-#customize-controls {
-    text-decoration: none;
+.tns-nav > [aria-controls] {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid $brightRed;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: none;
+}
+
+.tns-nav > .tns-nav-active {
+    background: $brightRed;
 }

@@ -459,23 +459,38 @@ button_white,
   margin-bottom: 3rem;
 }
 
-.testimonials_slider {
-  position: relative;
-  padding: 1rem 1rem;
-}
-
 .testimonials_card {
-  position: relative;
   background-color: #FAFAFA;
+  padding: 2rem;
+  height: 20rem;
 }
 
 .testimonials_card img {
   width: 20%;
-  margin-top: -2rem;
 }
 
-#customize-controls {
-  text-decoration: none;
+@media (min-width: 40em) {
+  .testimonials_card {
+    margin-bottom: 3rem;
+  }
+}
+
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #f25f3a;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tns-nav > .tns-nav-active {
+  background: #f25f3a;
 }
 
 .simplify {
