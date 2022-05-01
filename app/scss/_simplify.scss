@@ -1,0 +1,29 @@
+.simplify {
+    background-color: #f25f3a;
+    text-align: center;
+    height: 25rem;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        color: $white;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../images/bg-simplify-section-mobile.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: translate(-16rem, 2.625rem) rotate(40deg);
+    }
+}

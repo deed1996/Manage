@@ -1,5 +1,5 @@
-.header {
-  display: fixed;
+.footer {
+  background-color: black;
 }
 
 .header.open .header_toggle > span:first-child {
@@ -185,6 +185,12 @@ button:hover,
   cursor: pointer;
 }
 
+button_white,
+.button_white {
+  background-color: white;
+  color: #f25f3a;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -275,19 +281,6 @@ button:hover,
   overflow-x: hidden;
 }
 
-@media (min-width: 64em) {
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 40rem;
-    overflow: hidden;
-  }
-}
-
 @media (min-width: 40em) {
   .hero {
     display: -webkit-box;
@@ -296,8 +289,9 @@ button:hover,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 35rem;
+    height: 45rem;
     overflow: hidden;
+    padding-bottom: 3rem;
   }
 }
 
@@ -459,5 +453,69 @@ button:hover,
 
 .testimonials {
   text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 3rem;
+}
+
+.testimonials_slider {
+  position: relative;
+  padding: 1rem 1rem;
+}
+
+.testimonials_card {
+  position: relative;
+  background-color: #FAFAFA;
+}
+
+.testimonials_card img {
+  width: 20%;
+  margin-top: -2rem;
+}
+
+#customize-controls {
+  text-decoration: none;
+}
+
+.simplify {
+  background-color: #f25f3a;
+  text-align: center;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.simplify h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.simplify::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/bg-simplify-section-mobile.svg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-transform: translate(-16rem, 2.625rem) rotate(40deg);
+          transform: translate(-16rem, 2.625rem) rotate(40deg);
 }
 /*# sourceMappingURL=styles.css.map */

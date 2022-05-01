@@ -2,18 +2,12 @@
 
     overflow-x: hidden;
 
-    @include breakpoint-up(large) { //Desktop
-        display: flex;
-        align-items: center;
-        height: 40rem;
-        overflow: hidden;
-    }
-
     @include breakpoint-up(medium) { //Tablet
         display: flex;
         align-items: center;
-        height: 35rem;
+        height: 45rem;
         overflow: hidden;
+        padding-bottom: 3rem;
     }
 
     &_image {

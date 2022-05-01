@@ -1,3 +1,28 @@
 .testimonials {
     text-align: center;
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+
+
+    &_slider {
+        position: relative;
+        padding: 1rem 1rem;
+
+    }
+
+    &_card {
+        position: relative;
+        background-color: #FAFAFA;
+
+        img {
+            width: 20%;
+            margin-top: -2rem;
+        }
+    }
+}
+
+#customize-controls {
+    text-decoration: none;
 }

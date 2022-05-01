@@ -87,6 +87,11 @@ button,
         opacity: 0.5;
         cursor: pointer;
     }
+
+    &_white {
+        background-color: $white;
+        color: $brightRed;
+    }
 }
 
 
