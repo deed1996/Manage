@@ -1,3 +1,32 @@
 .footer {
-    background-color: black;
+    
+    a {
+        color: white;
+    }
+
+    &_socials {
+
+    }
+
+
+    &_links {
+
+        &.col1 {
+
+        }
+
+        &.col2 {
+            
+        }
+
+    }
+
+    &_form {
+
+    }
+
+    &_copyright {
+
+    }
+    
 }
