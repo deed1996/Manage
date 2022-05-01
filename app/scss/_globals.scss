@@ -96,13 +96,6 @@ button,
     }
 }
 
-footer {
-    background-color: black;
-    height: 20rem;
-    position: relative;
-}
-
-
 //Visibility 
 .hide-for-mobile {
     @include breakpoint-down(medium) {

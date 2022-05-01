@@ -1,6 +1,10 @@
 .testimonials {
     text-align: center;
 
+    @include breakpoint-up(medium) {
+        margin-bottom: 5rem;
+    }
+
     h2 {
         margin-bottom: 3rem;
     }

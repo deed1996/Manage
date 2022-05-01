@@ -1,32 +1,61 @@
 .footer {
-    
-    a {
-        color: white;
+
+    background-color: $veryDarkBlue;
+    color: $white;
+    padding: 2.5rem;
+    text-align: left;
+    position: relative;
+
+    &_logo {
+        margin-bottom: 1.875rem;
+        display: block;
     }
 
-    &_socials {
-
-    }
+    &_socials {}
 
 
     &_links {
 
-        &.col1 {
+        display: inline-grid;
+        justify-items: start;
+        align-items: stretch;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 
+        a {
+            color: $white;
+            padding-bottom: 1rem;
         }
+        
+        &.col1 {}
 
-        &.col2 {
-            
-        }
+        &.col2 {}
 
     }
 
     &_form {
+        display: block;
+
+        input {
+            padding: 0.7rem 1.5rem;
+            border-radius: 2.5rem;
+            width: 70%;
+            margin-right: 0.5rem;
+        }
+
+        a.button {
+            box-shadow: none;
+        }
 
     }
 
     &_copyright {
 
+        a.button {}
+
     }
-    
+
 }

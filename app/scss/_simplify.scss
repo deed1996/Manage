@@ -27,12 +27,12 @@
         background-size: contain;
         transform: translate(-12rem, 2.625rem);
 
-        @include breakpoint-up(medium) {
-            width: 50%;
-            transform: translate(-1rem, 6.625rem);
-        }
+        // @include breakpoint-up(medium) {
+        //     width: 50%;
+        //     transform: translate(-1rem, 6.625rem);
+        // }
 
-        @include breakpoint-up(large) {
+        @include breakpoint-up(medium) {
             content: "";
             position: absolute;
             background-image: url(../../images/bg-simplify-section-desktop.svg);
@@ -42,7 +42,7 @@
             background-position: center;
             background-size: cover;
             -webkit-transform: translate(8rem, -2.375rem);
-            transform: translate(10rem, -0.375rem);
+            transform: translate(0rem, -0.375rem);
             overflow: hidden;
         }
     }
