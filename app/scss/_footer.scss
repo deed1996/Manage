@@ -3,19 +3,23 @@
     background-color: $veryDarkBlue;
     color: $white;
     padding: 2.5rem;
-    text-align: left;
     position: relative;
+    text-align: center;
 
     &_logo {
-        margin-bottom: 1.875rem;
-        display: block;
+        img {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 
-    &_socials {}
+    &_socials {
+        display: flex;
+        justify-content: space-around;
+    }
 
 
     &_links {
-
         display: inline-grid;
         justify-items: start;
         align-items: stretch;
@@ -29,21 +33,17 @@
             color: $white;
             padding-bottom: 1rem;
         }
-        
-        &.col1 {}
-
-        &.col2 {}
 
     }
 
     &_form {
-        display: block;
-
         input {
             padding: 0.7rem 1.5rem;
             border-radius: 2.5rem;
             width: 70%;
             margin-right: 0.5rem;
+            color: $darkGrayishBlue;
+            font-size: 0.8rem;
         }
 
         a.button {
@@ -51,11 +51,4 @@
         }
 
     }
-
-    &_copyright {
-
-        a.button {}
-
-    }
-
 }
