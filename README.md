@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://deed1996.github.io/Manage-Landing-Page/)
+- Solution URL:[deed1996.github.io/Manage/](https://deed1996.github.io/Manage/)
 
 ## My process
 
